@@ -62,7 +62,7 @@
     <div id="card">
         <!-- Model Viewer -->
         <model-viewer 
-            src="Intelliblate.glb"
+           
             ios-src="Intelliblate.usdz" 
             ar 
             ar-modes="webxr scene-viewer quick-look" 
@@ -74,7 +74,10 @@
             exposure="1" 
             environment-image="legacy"
             >
-            
+             <gltf-model src="Intelliblate.glb" position="0 0 0"></gltf-model>
+
+            <!-- Second Model (adjust position to avoid overlap) -->
+          <gltf-model src="sterad.glb" position="2 0 0"></gltf-model>
             <div class="progress-bar hide" slot="progress-bar">
                 <div class="update-bar"></div>
             </div>
